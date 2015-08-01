@@ -14,9 +14,15 @@ var fn =
         },
         acc: function(){
             if($(this).index() == 0)
+            {
+                alert();
                acc.start();
+            }
             else
+            {
+                alert();
                 acc.stop();
+            }
         }
     };
 
