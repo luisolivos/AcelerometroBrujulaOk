@@ -9,10 +9,12 @@ var fn =
                 navigator.addEventListener("deviceready", fn.init, false);
         },
         init: function(){
-            $('#acelerometro .individual li').eq(0).tap(ace.start);
-            $('#acelerometro .individual li').eq(1).tap(ace.stop);
+            $('#acelerometro .individual li').eq(0).tap(acc.start);
+            $('#acelerometro .individual li').eq(1).tap(acc.stop);
             //fn.acc();
         },
+        
+        
         acc: function(){
             if($(this).index() == 0)
             {
