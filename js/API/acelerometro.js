@@ -22,8 +22,11 @@ var acc = {
     stop: function(){
         alert();
         if(acc.watchID != null)
+        {
             navigator.accelerometer.clearWarch(acc.watchID);
-        $('#acelerometro .scroll h2').html("Detenido");
+            acc.watchID =null;
+            $('#acelerometro .scroll h2').html("Detenido");
+        }
     }
     
     
