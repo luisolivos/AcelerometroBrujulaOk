@@ -11,6 +11,7 @@ var acc = {
         alert('onError!');
     },
     start: function(){
+        alert();
         if (acc.watchID == null){
             var options = { frequency: 500 };  // Update every 3 seconds
             acc.watchID = navigator.accelerometer.watchAcceleration(acc.onSuccess, acc.onError, options);
@@ -19,6 +20,7 @@ var acc = {
         }
     },
     stop: function(){
+        alert();
         if(acc.watchID != null)
             navigator.accelerometer.clearWarch(acc.watchID);
         $('#acelerometro .scroll h2').html("Detenido");
