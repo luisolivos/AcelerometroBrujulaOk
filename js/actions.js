@@ -5,11 +5,12 @@ var jQT = new $.jQTouch({
 
 var fn = 
     {
-        ready: function (){
+        davice: function (){
                 navigator.addEventListener("deviceready", fn.init, false);
         },
         init: function(){
-            $('#acelerometro .individual li').tap(fn.acc);
+            $('#acelerometro .individual li').eq(0).tap(ace.start);
+            $('#acelerometro .individual li').eq(1).tap(ace.stop);
             //fn.acc();
         },
         acc: function(){
@@ -26,4 +27,4 @@ var fn =
         }
     };
 
-$(fn.ready);
+$(fn.davice);
