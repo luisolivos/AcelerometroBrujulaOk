@@ -13,7 +13,6 @@ var fn =
             //fn.acc();
         },
         acc: function(){
-            //alert("");
             if($(this).index() == 0)
                acc.start();
             else
@@ -21,4 +20,4 @@ var fn =
         }
     };
 
-$(fn.ready);
+$(fn.init);
