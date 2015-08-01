@@ -9,11 +9,8 @@ var fn =
                 navigator.addEventListener("deviceready", fn.init, false);
         },
         init: function(){
-            $('#acelerometro .individual li').eq(0).tap(acc.start);
-            $('#acelerometro .individual li').eq(1).tap(acc.stop);
-            //fn.acc();
+            $('#acelerometro .individual li').tap(fn.acc);
         },
-        
         
         acc: function(){
             if($(this).index() == 0)
